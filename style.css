@@ -1,0 +1,156 @@
+:root {
+    font-size: 15px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    /* overflow-x: hidden; */
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+li {
+    list-style: none;
+    float: right;
+    padding: 18px 15px 0px 15px;
+}
+
+a {
+    text-decoration: none;
+}
+
+@font-face {
+    font-family: Nunito;
+    src: url(./assets/fonts/Nunito/Nunito-Regular.ttf);
+}
+
+.menu-icon {
+    color: white;
+    float: right;
+    font-size: 25px;
+    padding: 15px 0px;
+    display: none;
+}
+
+.container {
+    width: 100%;
+}
+
+.wrapper {
+    padding: 0 15px;
+    margin: 0 50px;
+}
+
+.content {
+    margin: 5% auto;
+}
+
+.navbar {
+    display: flex;
+    position: fixed;
+    width: 100%;
+    height: 60px;
+    background-color: rgba(0, 0, 0, .1);
+    z-index: 2;
+    transition: all .2s;
+
+}
+
+.navbar.active {
+    background-color: rgb(9, 58, 122);
+    transition: all .2s;
+}
+
+.nav-link a {
+    color: #ffffff;
+    font-weight: bold;
+    font-size: 15px;
+    line-height: 18px;
+}
+
+.navbar-logo {
+    float: left;
+    padding-top: 20px;
+}
+
+.layer-color {
+    background: linear-gradient(0.87deg, rgba(2, 55, 135, 0.9) 0.69%, rgba(81, 38, 174, 0.4736) 100.48%, rgba(38, 92, 174, 0.0102906) 100.49%, rgba(195, 195, 196, 0.00520833) 100.5%, #76A6EF 100.51%);
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+}
+
+.landing-page {
+    background-image: url(assets/img/landing-page-bg.png);
+    background-repeat: no-repeat;
+    height: 814px;
+    position: relative;
+    background-size: cover;
+}
+
+.header img {
+    width: 100%;
+}
+
+.landing-page .landing-text,
+.landing-p-text {
+    font-family: Nunito;
+    font-style: normal;
+    color: #FFFFFF;
+
+}
+
+.landing-page .landing-text {
+    font-weight: bold;
+    font-size: 2rem;
+    line-height: 82px;
+    margin-top: 200px;
+    padding-bottom: 48px;
+}
+
+.landing-page .landing-p-text {
+    font-size: 2rem;
+    line-height: 40px;
+    padding-bottom: 35px;
+}
+
+.search {
+    display: block;
+}
+
+input[type="text"] {
+    padding-left: 15px;
+    padding-right: 105px;
+    font-size: 20px;
+    outline: none;
+    width: 85%;
+    height: 50px;
+}
+
+.btn-search {
+    height: 52px;
+    width: 100px;
+    transform: translateX(-100%);
+    position: absolute;
+    background-color: #FFC839;
+    border-style: none;
+    box-shadow: 0 3px #ab8420;
+}
+
+.btn-search:focus {
+    outline: none;
+}
+
+.btn-search:active {
+    box-shadow: none;
+    transform: translate(-100px, 1px);
+}
+
+.sectionTwo {
+    height: 800px;
+}

@@ -1,0 +1,59 @@
+/* wide screen pc */
+@media (max-width:2000px) {}
+
+/* Untuk Tablet */
+@media (max-width:1000px) {
+    .landing-page .landing-text {
+        line-height: 65px;
+    }
+
+    .landing-page .landing-p-text {
+        line-height: 35px;
+        width: 80%;
+        overflow-wrap: break-word;
+    }
+
+    input[type="text"] {
+        width: 75%;
+    }
+}
+
+/* Untuk Smartphone */
+@media (max-width:743px) {
+    .wrapper {
+        margin: 0 25px;
+    }
+
+    .navbar-logo {
+        margin-left: 15px;
+    }
+
+    .nav-link {
+        display: none;
+    }
+
+    .menu-icon {
+        display: block;
+    }
+
+    .landing-page .landing-text {
+        line-height: 55px;
+        font-size: 20px;
+    }
+
+    .landing-page .landing-p-text {
+        line-height: 35px;
+        font-size: 25px;
+    }
+
+    input[type="text"] {
+        width: 60%;
+    }
+}
+
+/* Small screen Smartphone */
+@media(max-width:389px) {
+    input[type="text"] {
+        width: 55%;
+    }
+}
