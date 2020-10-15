@@ -56,12 +56,23 @@ a {
     background-color: rgba(0, 0, 0, .1);
     z-index: 2;
     transition: all .2s;
-
 }
 
 .navbar.active {
     background-color: rgb(9, 58, 122);
     transition: all .2s;
+}
+
+.nav-link {
+    transition: transform 0.2s ease;
+}
+
+.nav-link.open {
+    transform: translateY(-100%);
+}
+
+.nav-link.close {
+    transform: translateY(0%);
 }
 
 .nav-link a {
@@ -140,6 +151,7 @@ input[type="text"] {
     background-color: #FFC839;
     border-style: none;
     box-shadow: 0 3px #ab8420;
+    cursor: pointer;
 }
 
 .btn-search:focus {
